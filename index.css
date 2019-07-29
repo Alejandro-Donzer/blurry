@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+}
+
+.image-container {
+  background: url(https://rtifm.rs/wp-content/uploads/2019/02/VO%C4%86E.jpg);
+  height: 100vh;
+  background-size: cover;
+}
+
+.text {
+  background: rgba(10, 10, 10, 0.6);
+  width: 100%;
+  height: 100%;
+  font-size: 2rem;
+  font-family: Arial;
+  padding: 1em;
+  color: white;
+}
+
+.content {
+  background: inherit; /* !! */
+  width: 60%;
+  height: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden; /* !! */
+  border-radius: 1em;
+}
+
+.blur {
+  background: inherit; /* !! */
+  height: 100vh; /* !! */
+  width: 100vw; /* !! */
+  position: absolute; /* !! */
+  top: 0; /* !! */
+  transform: translate(-20%, -30%);
+  filter: blur(20px);
+  -webkit-filter: blur(20px);
+  z-index: -1; /* !! */
+}
+
+.sliders_div {
+  background: rgba(10, 10, 10, 0.8);
+  height: fit-content;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  grid-template-rows: repeat(7, 1fr);
+  grid-gap: 10px;
+  align-items: center;
+}
+
+p {
+  font-family: Arial;
+  color: white;
+  margin: 0;
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 2px;
+  background: white;
+  outline: none;
+  opacity: 0.9;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+}
